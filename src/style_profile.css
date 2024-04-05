@@ -1,0 +1,106 @@
+body {
+  background-image: url('../data/img6.png');
+  background-size: cover; 
+  background-position: center; 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Varela Round', sans-serif; 
+  color: rgb(0, 0, 0); 
+  text-shadow: -1px -1px 0 rgb(146, 7, 132), 1px -1px 0 rgb(110, 7, 129), -1px 1px 0 rgb(20, 17, 17), 1px 1px 0 black; 
+}
+
+.social-link {
+  text-align: center; /* Centers the content */
+  padding: 20px; /* Adds space around the LinkedIn logo for visual separation */
+}
+
+.background {
+  background-image: url('../data/background1.png'); /* Path to your image */
+  height: 300px; /* Set the height of your div */
+  width: 100%; /* Set the width of your div, you can adjust it as needed */
+  background-size: cover; /* This will cover the entire div without stretching the image */
+  background-position: center; /* This will center the background image */
+}
+.card {
+  font: "Oswald";
+  font-size: 22px; 
+  background-color: #e1bee7; /* Lighter lavender for card backgrounds */
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ce93d8; /* Soft purple border */
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(206, 147, 216, 0.4); /* Purple shadow for depth */
+  border-radius: 10px; /* Slightly rounded corners for a soft look */
+}
+.big1{
+  font-size: 28;
+}
+.card a img {
+  width: 30px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.card h2 {
+  color: #f7f7f7; /* Deeper purple for headings for contrast */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Sleek, modern font */
+}
+
+.half-width {
+  width: 50%;
+}
+
+.circle-image {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #ba68c8; /* Light purple border around the profile image */
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between; /* Align logos horizontally with space between them */
+}
+
+.logo-item {
+  text-align: center; /* Center text under each logo */
+  flex-basis: 30%; /* Adjust the width of each logo item */
+}
+
+.logo-item img {
+  width: 100px; /* Adjust the width of the logos */
+}
+
+.logo-item p {
+  margin: 5px 0; /* Add some margin to separate text from logos */
+
+}
+
+.container {
+  position: fixed;
+  top: -50px; /* Initial position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.icon {
+  width: 120px; /* Adjust the width of your icon */
+  opacity: 0; /* Initially hidden */
+  animation: fly 6s linear infinite alternate, rotate 4s linear infinite; /* Apply the flying and rotating animations */
+}
+
+@keyframes fly {
+  0% { top: -50px; opacity: 0; }
+  50% { top: 50px; opacity: 1; }
+  100% { top: -50px; opacity: 0; }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
